@@ -13,9 +13,9 @@ if [ -d /home/pfsense/pfSenseGITREPO/.git ]; then
 fi
 
 if [ -d /home/pfsense/tools/.git ]; then
-	echo ">>>   Setting Tools repo to git://github.com/pfsense/pfsense-tools.git"
+	echo ">>>   Setting Tools repo to git://github.com/ky41083/pfsense-tools.git"
 	cd /home/pfsense/tools/
-	git remote set-url origin git://github.com/pfsense/pfsense-tools.git
+	git remote set-url origin git://github.com/ky41083/pfsense-tools.git
 fi
 
 if [ -d /home/pfsense/packages/.git ]; then
