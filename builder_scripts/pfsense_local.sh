@@ -339,7 +339,7 @@ else
 	export BUILD_KERNELS=${BUILD_KERNELS:-"pfSense_SMP.${FREEBSD_VERSION} pfSense_wrap_vga.${FREEBSD_VERSION}.${ARCH}"}
 fi
 
-if [ ${FREEBSD_VERSION} -ge 10 ]; then
+if [ -f /usr/local/sbin/pkg2ng ]; then
 	USE_PKGNG=yes
 	PKG_INFO="pkg info"
 	PKG_QUERY="pkg query %n"
