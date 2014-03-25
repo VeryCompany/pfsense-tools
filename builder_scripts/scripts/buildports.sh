@@ -54,7 +54,7 @@ if [ -z "${PORTS_LIST}" -o ! -f "${PORTS_LIST}" ]; then
 	exit 1
 fi
 
-if [ $(sysctl -n kern.osreldate) -gt 1000000 ]; then
+if [ -f /usr/local/sbin/pkg2ng ]; then
 	USE_PKGNG=1
 else
 	unset USE_PKGNG
